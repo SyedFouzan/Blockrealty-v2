@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blockrealty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/stylenav.css">
+  <link rel="stylesheet" href="css/social.css">
+  <link rel="stylesheet" href="css/slide.css">
+  <link rel="stylesheet" href="css/stylein.css">
+  <link rel="SHORTCUT ICON" href="images/BR-Symbol.png">
+</head>
+
+<body>
+  <!-- header login sign up -->
+  <div class="row" style="background-color:black">
+    <h1 class="head1">
+      <img id="logo" class="logo" src="images/BR-Symbol.png" alt="logo">
+      <i style="float:left; color:white;">lockrealty</i>
+      <a href="./login.html" class="buttonl">LOGIN</a>
+      <a href="./signup.html" class="signin">SIGN UP</a>
+    </h1>
+  </div>
+  <!-- Menu Bar-->
+  <div class="container1">
+  <div class="row">
+    <ul>
+      <li><a  href="./index.html">Home</a></li>
+      <li><a href="./News.html">News</a></li>
+      <li><a href="./Contact.html">Contact</a></li>
+      <li><a href="./About.html">About</a></li>
+    </ul>
+  </div>
+  </div>
+  <!-- tagline -->
+  <div class="container">
+    <h1 class="tagline"><b>We serve you to make your life </b><br>easier,secure and faster.</h1>
+    <p class="p1">Deal Realty with Crypto</p>
+</div>
+<hr>
+<!-- listing -->
+
+  <div class="container">
+    <h1 class="head1">Featured Listings</h1>
+  </div>
+<!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Slides 1 Operation -->
+    <div class="mySlides fade">
+      <a href="./prop1.html" ><button class="btn">Crypto Buy</button></a>
+      <img src="images/prop2.jpeg" style="width:100%">
+      <div class="text">#7 Dollars Colony</div>
+    </div>
+<!-- Slides 2 Operation -->
+    <div class="mySlides fade">
+        <img src="images/prop1.jpg" style="width:100%">
+        <div class="text">#2 Jp Nagar</div>
+    </div>
+<!-- Slides 3 Operation -->
+    <div class="mySlides fade">
+      <img src="images/prop3.jpg" style="width:100%">
+      <div class="text">#3 Electronic City</div>
+    </div>
+<!-- Arrow Operation -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+
+<!-- Dotted Slide Fade -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <!-- container for footer -->
+  <div class="container2">
+    <div class="social-icons">
+      <h3 class="p1">Follow us on social media</h3>
+
+      <table align="center">
+        <tr>
+          <th> <a href="https://www.facebook.com/blockrealty/" class="fa fa-facebook"></a></th>
+          <th> <a href="https://www.twitter.com/blockrealtyltd/" class="fa fa-twitter"></a></th>
+          <th> <a href="https://youtube.com/channel/UCCixGniwklsqXu1bPZlFCFw" class="fa fa-youtube"></a></th>
+          <th> <a href="https://www.instagram.com/blockrealtyltd/" class="fa fa-instagram"></a></th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="copyr">
+    <div id="copyright">
+        <p>© BlockRealty pvt ltd</p>
+        <p>Please Read <a href="#">Terms & Conditions</a></p>
+    </div>
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+
+
+</body>
+
+</html>

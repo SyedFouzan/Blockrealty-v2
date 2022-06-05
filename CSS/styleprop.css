@@ -1,0 +1,196 @@
+.h1 {
+  text-align: left;
+  font-size: 25px;
+  margin-left: 70px;
+}
+
+.btn {
+  position: relative;
+  background-color: #DAF7A6;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.h3 {
+  color: #3A3845;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.buttonb {
+
+  display: flex;
+  justify-content: center;
+  background-color: #0AA1DD;
+  opacity: 1;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 1px auto;
+}
+
+.buttonb:hover {
+  background-color: #0AA1DD;
+  opacity: 0.7;
+}
+
+.p {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.p1 {
+  margin: 0 0 0 0;
+  font-size: 25px;
+}
+
+#map {
+  height: 215px;
+  width: 100%;
+}
+
+.container {
+  border-radius: 30px;
+  border: 0;
+  padding: 10px 24px;
+  background-color: white;
+
+  margin: 20px;
+}
+.container2{
+  border-radius: 30px;
+  border: 0;
+  padding: 10px 24px;
+  background-color: white;
+  margin: 20px;
+  width:50%;
+}
+.container3{
+  width:auto;
+  height:200px;
+  margin-bottom:20px;
+}
+.img1 {
+  border-radius: 10px;
+}
+.in{
+  text-align: center;
+  background-color: #D3D3D3;
+  border: 0;
+  border-radius: 10px;
+  margin-left:0px;
+  padding: 15px;
+  outline: none;
+  font-size: 15px;
+}
+label
+{
+  font-size:22px;
+  font-family: 'Roboto', sans-serif;
+}
+select {
+  font-size:20px;
+  font-family:'Roboto', sans-serif;
+  border-radius: 10px;
+  padding: 8px;
+}
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container-prop {
+  box-sizing: border-box;
+  position: relative;
+  height: auto;
+  width: auto;
+  margin: 0px;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+*, *::before, ::after {
+  box-sizing: content-box;
+}
+
+
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px
+  }
+}

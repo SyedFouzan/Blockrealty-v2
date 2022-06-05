@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="css/stylenav.css">
+  <link rel="stylesheet" href="css/styleprop.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>property</title>
+</head>
+
+<body>
+  <ul>
+    <li><a  href="./index.html">Home</a></li>
+    <li><a href="./News.html">News</a></li>
+    <li><a href="./Contact.html">Contact</a></li>
+    <li><a href="./About.html">About</a></li>
+  </ul>
+<!-- slideshow -->
+  <div class="slideshow-container-prop">
+
+    <div class="mySlides fade">
+      <img src="images/prop2.jpeg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/pic2.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/pic3.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/pic4.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/pic5.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/pic6.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/pic7.jpeg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <!-- <br> -->
+  <div class="row">
+    <div class="column">
+      <div class="container">
+
+        <h1 class="p">#7 Dollars Colony,
+          RMV Extension Stage2,<br>BLR 560094, IND <a href="https://goo.gl/maps/AjTfkZwKxyMNq9Hk8"><img src="images/loc.png" alt="location symbol"></a></h1>
+        <a href="https://twitter.com/share?url=https://www.twitter.com/blockrealtyltd/ &text=Property via=@syedsalehfouzan">
+          <img class="img1" height="40" width="45" src="./images/twitter.gif"alt="twitter gif">
+        </a>
+        <p> <span> &#128994;&nbsp;Active&nbsp;|</span><span style="color:darkolivegreen;font-weight:bold">Published on May 24, 2022</span> </p>
+        <h3 class="h3">Neighbourhood</h3>
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container2">
+        <h1 class="P">₹2,49,50,000/-</h1>
+            <input class="in" id="EnterInr" type="number" placeholder="Enter Amount in Inr" oninput="EtherConverter(this.value)" onchange="EtherConverter(this.value)">
+          <h3 class="h3">Ether Ξ <span id="outputEther"></span>
+          </h3>
+          <h3 class="h3">Bitcoin ₿<span id="outputBtc"></span>
+          </h3>
+        <div class="buyer">
+          <form action="/action_page.php">
+            <label for="tokens">Accepted cryptocurrencies</label>
+            <select name="tokens" id="tokens">
+              <option value="Inr">INR</option>
+              <option value="Bitcoin">BTC</option>
+              <option value="Ether">ETH</option>
+              <option value="Usd">USD</option>
+            </select>
+            <br><br>
+            <button class="buttonb">Make offer</button>
+          </form>
+        </div>
+      </div>
+      <br>
+    </div>
+
+  </div>
+  <script src="./js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfnD08LzVAMHF9l1dqwFJbmt49XQZOgM4&callback=initMap">
+
+  </script>
+
+
+
+</body>
+<script>
+  function EtherConverter(valNum) {
+    document.getElementById("outputEther").innerHTML = valNum / 149253.73;
+    document.getElementById("outputBtc").innerHTML = valNum / 2493765.58;
+
+  }
+</script>
+
+<script type="text/javascript">
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
+
+</html>
