@@ -7,7 +7,7 @@ body{
   padding: 1px;
   overflow: hidden;
   background-color: white;
-
+  margin: 0;
 }
 li {
   float: left;
@@ -15,7 +15,6 @@ li {
 }
 
 li a {
-  padding-left: 20px;
   margin:12px auto;
   font-weight: bold;
   font-size: 18px;
