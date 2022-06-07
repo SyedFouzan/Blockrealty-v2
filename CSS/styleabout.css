@@ -1,56 +1,45 @@
+
 h1 {
   color:#22577A;
   text-align: center;
   font-size:35px;
 }
 
-*{
-  box-sizing: border-box;
+*, *:before, *:after {
+  box-sizing: inherit;
+
 }
 
 .column {
   float: left;
-   width: 33.33%;
+   width: 30%;
    padding: 10px;
    height: 520px;
-}
-.column2 {
-  float: left;
-   width: 50%;
-   padding: 10px;
-   height: 520px;
+   margin-left:30px;
 }
 .card {
-  width: 80%;
+  width: 90%;
   height:100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: whitesmoke;
   text-align: center;
-  margin-left: 15%;
-}
-.card2{
-  width: 50%;
-  height:100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: whitesmoke;
-  text-align: center;
-  margin-left: 25%;
 }
 
 .container {
   background-color:white;
   padding: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 80%;
+  width: 85%;
   margin: 1px auto;
   border-radius: 25px;
+  text-align: center;
 }
 
-.container::after, .row::after {
+/* .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 /* afte the header section */
 .about-section {
@@ -73,7 +62,7 @@ img {
 
 @media screen and (max-width: 650px) {
   .column {
-    width: 50%;
+    width: 100%;
     display: block;
   }
 }

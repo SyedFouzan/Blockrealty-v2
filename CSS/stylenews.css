@@ -5,6 +5,66 @@
 	box-sizing: border-box;
 	font-family: 'Roboto',sans-serif;
 }
+#logo {
+  float: left;
+}
+
+.logo {
+  margin:0px;
+  width:30px;
+}
+
+.head1 {
+  margin: 0px;
+  padding:10px 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rowi:after {
+  content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+}
+
+.signin{
+  float: right;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 8px;
+  cursor: pointer;
+}
+.signin:hover{
+color: #00acee;
+
+}
+
+.buttonl {
+  background-color: black;
+  float: right;
+  width:100px;
+  border: 1.5px solid;
+  color: #00acee;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 8px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.buttonl:hover {
+ background-color: #00acee;
+ border-color: #00acee;
+  color: white;
+}
 .blog-section{
 	width: 100%;
 

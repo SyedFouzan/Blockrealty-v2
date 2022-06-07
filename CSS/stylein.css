@@ -15,7 +15,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.row:after {
+.rowi:after {
   content: "";
   display: table;
   clear: both;
