@@ -4,39 +4,46 @@ h1 {
   font-size:35px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*{
+  box-sizing: border-box;
 }
 
 .column {
-  width: 30%;
-  margin:0px auto;
   float: left;
-  padding:5%;
+   width: 33.33%;
+   padding: 10px;
+   height: 520px;
 }
-
+.column2 {
+  float: left;
+   width: 50%;
+   padding: 10px;
+   height: 520px;
+}
 .card {
+  width: 80%;
+  height:100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0;
-  padding: 0px;
-  background-color: #DAE5D0;
+  background-color: whitesmoke;
   text-align: center;
-  display: flex;
+  margin-left: 15%;
+}
+.card2{
+  width: 50%;
+  height:100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: whitesmoke;
+  text-align: center;
+  margin-left: 25%;
 }
 
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: white;
-  color: #417D7A;
-}
-.img1 { flex: 1.3344; }
 .container {
+  background-color:white;
   padding: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 50%;
+  width: 80%;
   margin: 1px auto;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .container::after, .row::after {
@@ -45,6 +52,15 @@ h1 {
   display: table;
 }
 
+/* afte the header section */
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+  color: #417D7A;
+}
+
+
 .title {
   color: #112B3C;
 }
@@ -52,7 +68,7 @@ h1 {
 img {
   border-radius: 50%;
   width: 70%;
-  display: flex;
+  height:265.95px;
 }
 
 @media screen and (max-width: 650px) {
