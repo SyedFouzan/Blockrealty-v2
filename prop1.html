@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <link rel="stylesheet" href="CSS/stylenav.css">
   <link rel="stylesheet" href="CSS/styleprop.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +12,6 @@
 </head>
 
 <body>
-  <ul>
-    <li><a  href="./index.html">Home</a></li>
-    <li><a href="./News.html">News</a></li>
-    <li><a href="./Contact.html">Contact</a></li>
-    <li><a href="./About.html">About</a></li>
-  </ul>
 <!-- slideshow -->
   <div class="slideshow-container-prop">
 
@@ -66,9 +59,10 @@
         <div id="map"></div>
       </div>
     </div>
+
     <div class="column">
       <div class="container2">
-        <h1 class="P">₹2,49,50,000/-</h1>
+        <h1 class="p"><img class="img1" height="35" width="40" src="./images/price.png"alt="price">&nbsp &nbsp2,49,50,000/-</h1>
             <input class="in" id="EnterInr" type="number" placeholder="Enter Amount in Inr" oninput="EtherConverter(this.value)" onchange="EtherConverter(this.value)">
           <h3 class="h3">Ether Ξ <span id="outputEther"></span>
           </h3>
@@ -76,7 +70,7 @@
           </h3>
         <div class="buyer">
           <form action="/action_page.php">
-            <label for="tokens">Accepted cryptocurrencies</label>
+            <label for="tokens"><b>Accepted cryptocurrencies</b></label>
             <select name="tokens" id="tokens">
               <option value="Inr">INR</option>
               <option value="Bitcoin">BTC</option>
@@ -91,6 +85,24 @@
       <br>
     </div>
 
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="container">
+    <iframe width="100%" height="345" src="https://www.youtube.com/embed/fTfVAR_wIUA?autoplay=0&mute=1">
+</iframe>
+  </div>
+  </div>
+  <div class="column">
+    <div class="container">
+    <h2>Overview</h2>
+    <p class="p1"><img class="img1" height="40" width="45" src="./images/type.png"alt="prop type">&nbsp&nbsp&nbspSingle Family Home</p>
+    <p class="p1"><img class="img1" height="40" width="45" src="./images/size.png"alt="prop size">&nbsp&nbsp&nbsp1500sqft</p>
+    <p class="p1"><img class="img1" height="40" width="45" src="./images/bed.png"alt="prop bedroom">&nbsp&nbsp&nbsp6 Bedroom</p>
+    <p class="p1"><img class="img1" height="40" width="45" src="./images/shower.png"alt="prop bath">&nbsp&nbsp&nbsp7 Baths</p>
+    <p class="p1"><img class="img1" height="40" width="45" src="./images/garage.png"alt="prop garage">&nbsp&nbsp&nbspSingle Garage</p>
+  </div>
+  </div>
   </div>
   <script src="./js/script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfnD08LzVAMHF9l1dqwFJbmt49XQZOgM4&callback=initMap">

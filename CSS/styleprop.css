@@ -59,10 +59,10 @@
   font-size: 28px;
   font-family: 'Roboto', sans-serif;
 }
-
 .p1 {
-  margin: 0 0 0 0;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
 }
 
 #map {
@@ -92,7 +92,7 @@
   margin-bottom:20px;
 }
 .img1 {
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .in{
   text-align: center;
@@ -106,7 +106,7 @@
 }
 label
 {
-  font-size:22px;
+  font-size:25px;
   font-family: 'Roboto', sans-serif;
 }
 select {
