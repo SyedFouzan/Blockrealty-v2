@@ -1,5 +1,7 @@
 #logo {
   float: left;
+}
+.logo{
   margin:0px;
   width:30px;
 }
@@ -98,7 +100,7 @@ h1 {
 
 /* afte the header section */
 .about-section {
-  padding: 50px;
+  padding: 10px;
   text-align: center;
   background-color: white;
   color: #417D7A;
@@ -109,7 +111,7 @@ h1 {
   color: #112B3C;
 }
 
-img {
+.img {
   border-radius: 50%;
   width: 70%;
   height:265.95px;
